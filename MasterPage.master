@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        body,a{
+            background-color:#f4511e;
+            font-style:italic;
+            font-family:cursive;
+            color:white;
+        }
+    </style>
+</head>
+<body style="height: 33px">
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <table class="auto-style1">
+                <tr>
+                    <td><a href="Register.aspx">Register</a></td>
+                    <td><a href="Login.aspx">Login</a></td>
+                    <td><a href="Portfolio.aspx">HOME</a></td>
+                    <td>
+                        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
