@@ -121,7 +121,7 @@
     <!--<h2><a href="https://www.linkedin.com/in/rajesh-reddy-b35399148/" style="color:white; text-decoration:none;">click to view My LinkedinPage</a></h2><br />
   <h2><a href="https://github.com/desham430/" style="color:white; text-decoration:none;">Click to view my GitHub Account</a></h2><br />
   <h2><a href="Resume/Rajesh Reddy .docx" download="Rajesh" style="color:white; text-decoration:none;" >click Here for My Resume</a></h2>-->
-  <div class="row text-center slideanim">
+  <div class="row text-center slideanim ">
     
     <h1>LINKS</h1>
     <table align="center" class="nav-justified text-center" cellspacing="10">

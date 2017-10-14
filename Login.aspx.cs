@@ -58,7 +58,9 @@ public partial class Login : System.Web.UI.Page
             if (tb.Rows[0][0].ToString() == "1")
             {
                 //Response.Write("Login succesfull");
+                Session["username"] = UserName.Text.ToString();
                 Response.Redirect("Friends.aspx");
+                
 
             }
             else

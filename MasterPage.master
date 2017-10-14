@@ -24,7 +24,7 @@
     <div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
-            <table class="auto-style1">
+            <table class="auto-style1" style="align-content:center;align-items:center" >
                 <tr>
                     <td><a href="Register.aspx">Register</a></td>
                     <td><a href="Login.aspx">Login</a></td>
