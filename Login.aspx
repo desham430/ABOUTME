@@ -38,7 +38,7 @@
         
         .auto-style2 {
             width: 666px;
-            height: 297px;
+            height: 335px;
         }
         .auto-style3 {
             height: 36px;
@@ -46,17 +46,13 @@
         }
         
         
-        .auto-style4 {
-            width: 162px;
-        }
-        
-        
-    </style>
+        </style>
 </head>
-<body style="height: 312px">
+<body style="height: 342px">
     <center>
         <form id="form1" runat="server" class="auto-style2">
             <h1>Please Login Here</h1>
+            <h3>Only For friends!!!!!!</h3>
             <table cellspacing="10" class="nav-justified">
                 <tr>
                     <td>
@@ -64,9 +60,6 @@
                     </td>
                     <td>
                         <asp:TextBox ID="UserName" runat="server"></asp:TextBox>
-                    </td>
-                    <td class="auto-style4">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="UserName" ErrorMessage="Username Must Required" Font-Italic="True" ForeColor="#FFFFCC"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -76,17 +69,21 @@
                     <td>
                         <asp:TextBox ID="Password" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style4">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="Password" ErrorMessage="Password Must required"></asp:RequiredFieldValidator>
-                    </td>
                 </tr>
                 <tr>
-                    <td colspan="3" class="auto-style1">
+                    <td colspan="2" class="auto-style1">
                         <center style="margin-right: 0px" class="auto-style3"><asp:Button ID="Button1" runat="server" Text="SUBMIT" BackColor="#F4511E" BorderColor="White" Height="36px" Width="95px" OnClick="Button1_Click" /></center>
                     </td>
                 </tr>
+                <tr>
+                    <td colspan="2" class="auto-style1">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="Password" ErrorMessage="Password Must required"></asp:RequiredFieldValidator>
+                        <br />
+&nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="UserName" ErrorMessage="Username Must Required" Font-Italic="True" ForeColor="#FFFFCC"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
             </table>
-            <h4>If you are not Registered please click </h4>
+            <h4>If you are not Registered please click  the Register here</h4>
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Register.aspx">Register Here</asp:HyperLink>
 
             <br />

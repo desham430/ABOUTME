@@ -11,4 +11,10 @@ public partial class Register : System.Web.UI.Page
     {
 
     }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        string display = "Thankyou for your Registration,site is under upgradation Please contact Rajesh for more details";
+        ClientScript.RegisterStartupScript(this.GetType(), "yourMessage", "alert('" + display + "');", true);
+    }
 }

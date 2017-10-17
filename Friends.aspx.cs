@@ -11,7 +11,20 @@ public partial class Friends : System.Web.UI.Page
     {
         //Username.Text = Request.QueryString["uname"].ToString();
         String ss1 = Session["username"].ToString();
-        namelabel.Text = ss1;
+        //namelabel.Text = ss1;
+        //Tree1.SelectedValue = ss1;
 
+
+    }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        Session.Abandon();
+        Session.Clear();
+        Session.RemoveAll();
+        Response.AppendHeader("Refresh", "2;url=Portfolio.aspx");
+        Response.Cache.SetCacheability(HttpCacheability.NoCache);
+        Response.Cache.SetExpires(DateTime.UtcNow.AddHours(-1));
+        Response.Cache.SetNoStore();
     }
 }

@@ -27,7 +27,8 @@ public partial class Portfolio : System.Web.UI.Page
             String text1 = Request.Form["name"].ToString();
             String text2 = Request.Form["email"].ToString();
             String text3 = Request.Form["comments"].ToString();
-            SqlConnection con = new SqlConnection("Data Source = DESKTOP-QAC4L4H; database = RAJNET; Integrated Security = True");
+            //SqlConnection con = new SqlConnection("Data Source = DESKTOP-QAC4L4H; database = RAJNET; Integrated Security = True");
+            SqlConnection con = new SqlConnection("Server=tcp:desham430.database.windows.net,1433;Initial Catalog=rajeshdesham;Persist Security Info=False;User ID=desham430;Password=09p81@0430;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             Response.Write("connection sucess");
             con.Open();
             SqlParameter sp1 = new SqlParameter("@stuntname", text1);

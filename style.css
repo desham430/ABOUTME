@@ -94,7 +94,7 @@ h1 {
   .carousel-indicators li.active {
       background-color: #f4511e;
   }
-  .item h4 {
+  .item{
       font-size: 19px;
       line-height: 1.375em;
       font-weight: 400;
@@ -170,6 +170,7 @@ h1 {
       margin-bottom: 20px;
       color: #f4511e;
   }
+
   .slideanim {visibility:hidden;}
   .slide {
       animation-name: slide;
@@ -178,6 +179,7 @@ h1 {
       -webkit-animation-duration: 1s;
       visibility: visible;
   }
+
   @keyframes slide {
     0% {
       opacity: 0;

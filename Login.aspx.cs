@@ -34,7 +34,7 @@ public partial class Login : System.Web.UI.Page
         //    Response.Write("connection not established");
 
         //}
-        SqlConnection cn = new SqlConnection("Data Source=DESKTOP-QAC4L4H;database=RAJNET;Integrated Security=True");
+        SqlConnection cn = new SqlConnection("Server=tcp:desham430.database.windows.net,1433;Initial Catalog=rajeshdesham;Persist Security Info=False;User ID=desham430;Password=09p81@0430;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         try
         {
 

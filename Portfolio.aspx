@@ -19,9 +19,32 @@
             height: 155px;
            
         }
-        .auto-style7 {
-            width: 75%
+        .auto-style8 {
+            width: 181px;
+            height: 266px;
+            display:ruby;
+            margin-right: 0px;
+            margin-top: 51px;
+            border-radius:10px;
         }
+     
+       
+        
+        
+        .auto-style9 {
+            float: left;
+            height: 48px;
+            padding: 15px 15px;
+            font-size: 18px;
+            line-height: 20px;
+            width: 200px;
+        }
+       .auto-style8:hover { 
+           transform:scale(1.1) ;
+           
+
+       }
+        
         
     </style>
     <script type="text/javascript">
@@ -36,7 +59,7 @@
    
 
 
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-fixed-top" style="left: 0; right: 0; top: 0">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -44,21 +67,24 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
+        
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#skills">SKILLS</a></li>
         <li><a href="#portfolio">MORE</a></li>
-        <li><a href="#edetails">EMPLOYER DETAILS</a></li>
+        <li><a href="#edetails">PROJECTS</a></li>
         <li><a href="#contact">CONTACT</a></li>
           <li><a href="#login"  onclick="return login_onclick()" >LOGIN</a></li>
       </ul>
     </div>
   </div>
 </nav>
-
+           
+<a class="auto-style9" ><img src="IMAGES/img.jpg" class="auto-style8" /></a>
+              
 <div class="jumbotron text-center">
   <h1>Rajesh Reddy Desham</h1> 
   <p>Software Developer</p> 
@@ -69,8 +95,8 @@
   
     
       <h2>About Me</h2><br/>
-      <h4>Having 7+ years of experience</h4><br />
-      <p id="cl2">Started career as a Sql Developer In protos Infotech and worked like one year and came to US to study Master's In Computer Science <br /> and completed my master's and started working in REMOTE TIGER INC As a Developer</p>
+      <h4>Having 2+ years of experience</h4><br />
+      <p id="cl2">Started career as a Sql Developer In protos Infotech(Hyd,India) and worked like More Than a year and came to US to study Master's In Computer Science <br /> and completed my master's and started working in REMOTE TIGER INC As a Developer</p>
       <br>
     
     
@@ -94,10 +120,18 @@
             <tr>
                 <td><h4>C#</h4></td>
                 <td><h4>ASP.NET</h4></td>
+                <td><h4>JAVA</h4></td>
+                <td><h4>HTML&CSS</h4></td>
+                <td><h4>JAVASCRIPT</h4></td>
             </tr>
             <tr>
+                <td><h4> SQL SERVER</h4></td>
                 <td><h4>HADOOP</h4></td>
-                <td><h4> SERVER</h4></td>
+                <td><h4>APACHE HBASE</h4></td>
+                <td><h4>MICROSOFT AZURE</h4></td>
+                <td><h4>AWS</h4></td>
+
+            
             </tr>
         </table>
       
@@ -118,7 +152,7 @@
 <div id="portfolio" class="container-fluid text-center ">
     
 
-    <!--<h2><a href="https://www.linkedin.com/in/rajesh-reddy-b35399148/" style="color:white; text-decoration:none;">click to view My LinkedinPage</a></h2><br />
+    <!--<h2><a href="https://www.linkedin.com/in/rajesh-r-b35399148/" style="color:white; text-decoration:none;">click to view My LinkedinPage</a></h2><br />
   <h2><a href="https://github.com/desham430/" style="color:white; text-decoration:none;">Click to view my GitHub Account</a></h2><br />
   <h2><a href="Resume/Rajesh Reddy .docx" download="Rajesh" style="color:white; text-decoration:none;" >click Here for My Resume</a></h2>-->
   <div class="row text-center slideanim ">
@@ -127,7 +161,7 @@
     <table align="center" class="nav-justified text-center" cellspacing="10">
         <tr>
             <td>
-                <a href="https://www.linkedin.com/in/rajesh-reddy-b35399148/" target="_blank">
+                <a href="https://www.linkedin.com/in/rajesh-r-b35399148/" target="_blank">
   <img border="0" align="center"  src="IMAGES/linkedin.png" class="auto-style3"/>
 </a>
             </td>
@@ -190,25 +224,48 @@
     <div class="col-sm-4 col-xs-12">
            
     </div>     
-         
-    <h1 > REMOTE TIGER INC</h1>
-    <h3 >Name: Siddharth or “sidd”<br>
-      Phone: 301.703.9048<br>
-      Email: sidd@remotetiger.com
-
-</h3>
+        <font face="italic"><h1 >PROJECTS</h1>
+      <div>
+    PROTOS INFOTECH   (May-2013 to Dec-2014) <br />
+      Description:<br />
+          &nbsp; &nbsp; &nbsp; &nbsp; Protos Infotech is one of the information and technology services company where it provides Software services for Differenent clients 
+          in differents partsof the world.Where at there my role is  &nbsp to mainatain the  Employee Database to update and modifications and maintain the salaries of employees.<br />
+    <ul>
+        <li>Creating UML diagrams like Use case diagrams, class Diagrams to represent detailed design phase.</li>
+        <li>Created and managed structured objects like tables, views, stored procedures, and triggers.</li>
+        <li>Applying Normalization on tables.</li>
+        <li>Create/Modify SQL Stored Procedures for the data loads.</li>
+    
+      </ul>
+      REMOTE TIGER INC  (Feb-2017 to Sep-2017)
+      <br />
+        Description:<br />
+          &nbsp &nbsp &nbsp Remote tiger is one of the Technology services is a company which have so many clients,like  Customers can have the express service requests for account service and on-site services such as audits, surveys and med cart reviews. It has many features like Alerts, Medication order management, Online Billing, medication management reports etc. 
+      <ul>
+        <li>	This project is to provide Web Services to clients and vendors.</li>
+        <li>	Developed LINQ to SQL to get the data from Database and Inserting/Updating into the database.</li>
+        <li>	Developed SQL queries with JDBC API to create retrieve and update data.</li>
+        <li>	Performed Unit Testing of all modules.</li>
+          <li>Developed SQL queries for retrieving data used to generate the reports.</li>
+          <li>	Used JavaScript and ASP.NET for AJAX implementation and client side validations. </li>
+          <li>	Designed and developed Web Forms using ASP.NET Controls, CSS and HTML to facilitate the registered users.</li>
+          <li>Analyzed, designed and developed web-based database driven Intranet application programs and components to support business requirements using C#.NET, MVC 5.0, ADO.NET, Entity Framework and SQL.</li>
+    
+      </ul>
+      
+      </div></font>
   </div>
 </div>
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
+  <h2 class="text-center">CONTACT ME</h2>
   <div class="row">
     <div class="col-sm-5">
-      <p>Contact Me or leave your detail's and .I'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> HARRISBURG, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +1 201-817-9712</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> rajeshmscs1986@gmail.com</p>
+      <p>Contact Me or leave your detail's and .I'll get back to you soon &#9786 .</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> HACKENSACK,NJ,U.S</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +1-201-281-2639</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> rajeshmscs1992@gmail.com</p>
     </div>
       
     <div class="col-sm-7 slideanim">
@@ -241,7 +298,7 @@
 <div id="googleMap" style="height:400px;width:100%;"></div>
 <script>
 function myMap() {
-var myCenter = new google.maps.LatLng(40.2340849, -76.9411312);
+    var myCenter = new google.maps.LatLng(40.893381, -74.042884);
 var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 var marker = new google.maps.Marker({position:myCenter});

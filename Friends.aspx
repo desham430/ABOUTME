@@ -5,9 +5,9 @@
     <style type="text/css">
         .auto-style3 {
             width: 100%;
-            height: 36px;
+            height: 10px;
         }
-        a,#vid {
+        a {
             display: block;
             color: #000;
             padding: 8px 16px;
@@ -17,6 +17,9 @@
                 background-color:white;
                 color: #f4511e;
             }
+        .auto-style4 {
+            height: 50px;
+        }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -26,11 +29,16 @@
 <asp:Content ID="Content3" runat="server" contentplaceholderid="ContentPlaceHolder1">
     <table class="auto-style3" style="text-decoration:none"  >
         <tr>
-            <td><center><a onclick=" videoplay()" id="vid" >Videos</a></center></td>
-            <td><center><a href="Login.aspx">Login</a></center></td>
-            <td><center><a href="Portfolio.aspx" >HOME</a></center></td>
-            <td>
+            <td class="auto-style4"><center><a onclick=" videoplay()" id="vid" >Videos</a></center></td>
+            <td class="auto-style4"><center><a href="Login.aspx">Login</a></center></td>
+            <td class="auto-style4"><center><a href="Portfolio.aspx" >HOME</a></center></td>
+            <td class="auto-style4">
                 <center><asp:Label ID="namelabel" runat="server" Text="Label" Enabled="False"></asp:Label></center>
+                <%--<asp:treeview runat="server" ID="Tree1">
+                    <Nodes>
+                        <asp:TreeNode Text="New Node" Value="New Node"></asp:TreeNode>
+                    </Nodes>
+                </asp:treeview>--%>
             </td>
         </tr>
     </table>
@@ -58,6 +66,8 @@
         }
 
     </script>
+    
+    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="LOGOUT" />
     
 </asp:Content>
 
