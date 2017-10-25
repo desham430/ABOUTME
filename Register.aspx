@@ -16,7 +16,7 @@
 
         .auto-style1 {
             width: 57%;
-            height: 242px;
+            height: 313px;
             margin-bottom: 1px;
         }
         #tb1,h1,p{
@@ -25,44 +25,56 @@
             font-family:cursive;
         }
         
+        .auto-style2 {
+            height: 54px;
+        }
+        
     </style>
 </head>
-<body style="height: 379px">
+<body style="height: 407px">
     <form id="form1" runat="server">
         <center><h1>Please Register Here</h1></center>
         
         <table align="center" id="tb1" class="auto-style1" cellspacing="12" >
             <tr>
-                <td>UserName</td>
+                <td>
+                    <asp:Label ID="Label1" runat="server" Text="FullName"></asp:Label>
+                </td>
                 <td>
                     <asp:TextBox ID="TextBox1" runat="server" BackColor="White" ForeColor="Black"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td>Password</td>
+                <td>UserName</td>
                 <td>
                     <asp:TextBox ID="TextBox2" runat="server" BackColor="White" ForeColor="Black"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td>Re-Type-Password</td>
+                <td>Password</td>
                 <td>
                     <asp:TextBox ID="TextBox3" runat="server" BackColor="White" ForeColor="Black"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>Re-Type-Password</td>
+                <td>
+                    <asp:TextBox ID="TextBox4" runat="server" BackColor="White" ForeColor="Black"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>Sex</td>
                 <td><center>
                     <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatDirection="Horizontal" BorderColor="#FFCCCC" ForeColor="#FFFFCC" CellSpacing="2" CellPadding="15">
-                        <asp:ListItem>Male</asp:ListItem>
-                        <asp:ListItem>Female</asp:ListItem>
+                        <asp:ListItem Text="Male">Male</asp:ListItem>
+                        <asp:ListItem Text="Female">Female</asp:ListItem>
                     </asp:RadioButtonList></center>
                 </td>
             </tr>
             <tr>
                 <td>E-Mail</td>
                 <td>
-                    <asp:TextBox ID="TextBox4" runat="server" BackColor="White" ForeColor="Black"></asp:TextBox>
+                    <asp:TextBox ID="TextBox5" runat="server" BackColor="White" ForeColor="Black"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -74,8 +86,8 @@
                 <td colspan="2">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Please Enter Username  ,"></asp:RequiredFieldValidator>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="    Please enter Password  ,"></asp:RequiredFieldValidator>
-                    <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBox2" ControlToValidate="TextBox3" ErrorMessage="Passwords do not match."></asp:CompareValidator>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox4" ErrorMessage="Please enter a valid e-mail id" ForeColor="#FFFFCC" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                    <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBox3" ControlToValidate="TextBox4" ErrorMessage="Passwords do not match."></asp:CompareValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox5" ErrorMessage="Please enter a valid e-mail id" ForeColor="#FFFFCC" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                 </td>
             </tr>
         </table>
@@ -83,7 +95,7 @@
     </form>
 
     <footer>
-        <p>&#9757	Sorry site is under upgradation you may Experience Registration problems.. <br />Thank you for your patience </p>
+        <p class="auto-style2">&#9757	Sorry site is under upgradation you may Experience Registration problems.. <br />Thank you for your patience </p>
     </footer>        
         </body>
     

@@ -19,27 +19,7 @@
             height: 155px;
            
         }
-        .auto-style8 {
-            width: 181px;
-            height: 266px;
-            display:ruby;
-            margin-right: 0px;
-            margin-top: 51px;
-            border-radius:10px;
-        }
-     
-       
-        
-        
-        .auto-style9 {
-            float: left;
-            height: 48px;
-            padding: 15px 15px;
-            font-size: 18px;
-            line-height: 20px;
-            width: 200px;
-        }
-       .auto-style8:hover { 
+        .auto-style8:hover { 
            transform:scale(1.1) ;
            
 
@@ -59,7 +39,7 @@
    
 
 
-        <nav class="navbar navbar-default navbar-fixed-top" style="left: 0; right: 0; top: 0">
+        <nav class="navbar navbar-default navbar-fixed-top" style="left: -1px; right: 0px; top: 0; height: 50px;">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -82,9 +62,7 @@
     </div>
   </div>
 </nav>
-           
-<a class="auto-style9" ><img src="IMAGES/img.jpg" class="auto-style8" /></a>
-              
+       
 <div class="jumbotron text-center">
   <h1>Rajesh Reddy Desham</h1> 
   <p>Software Developer</p> 
@@ -116,7 +94,7 @@
 
     
     
-        <table class="nav-justified text-center" style="font-family:cursive"   >
+        <table class="nav-justified col-sm-4 text-center" style="font-family:cursive"   >
             <tr>
                 <td><h4>C#</h4></td>
                 <td><h4>ASP.NET</h4></td>
@@ -149,7 +127,7 @@
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center ">
+<div id="portfoli" class="container-fluid  text-center ">
     
 
     <!--<h2><a href="https://www.linkedin.com/in/rajesh-r-b35399148/" style="color:white; text-decoration:none;">click to view My LinkedinPage</a></h2><br />
@@ -158,7 +136,7 @@
   <div class="row text-center slideanim ">
     
     <h1>LINKS</h1>
-    <table align="center" class="nav-justified text-center" cellspacing="10">
+    <table align="center" class="nav-justified text-center col-sm-4" cellspacing="10">
         <tr>
             <td>
                 <a href="https://www.linkedin.com/in/rajesh-r-b35399148/" target="_blank">
