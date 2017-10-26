@@ -66,8 +66,8 @@
                 <td>Sex</td>
                 <td><center>
                     <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatDirection="Horizontal" BorderColor="#FFCCCC" ForeColor="#FFFFCC" CellSpacing="2" CellPadding="15">
-                        <asp:ListItem Text="Male">Male</asp:ListItem>
-                        <asp:ListItem Text="Female">Female</asp:ListItem>
+                        <asp:ListItem Text="Male" Value="Male">Male</asp:ListItem>
+                        <asp:ListItem Text="Female" Value="Male">Female</asp:ListItem>
                     </asp:RadioButtonList></center>
                 </td>
             </tr>
