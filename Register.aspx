@@ -16,7 +16,7 @@
 
         .auto-style1 {
             width: 57%;
-            height: 313px;
+            height: 324px;
             margin-bottom: 1px;
         }
         #tb1,h1,p{
@@ -26,16 +26,17 @@
         }
         
         .auto-style2 {
-            height: 54px;
+            height: 75px;
+            margin-top: 0;
         }
         
     </style>
 </head>
-<body style="height: 407px">
+<body style="height: 405px">
     <form id="form1" runat="server">
         <center><h1>Please Register Here</h1></center>
         
-        <table align="center" id="tb1" class="auto-style1" cellspacing="12" >
+        <table align="center" id="tb1" class="auto-style1" cellspacing="12" runat="server" >
             <tr>
                 <td>
                     <asp:Label ID="Label1" runat="server" Text="FullName"></asp:Label>
@@ -92,10 +93,13 @@
             </tr>
         </table>
         
+        <p class="auto-style2" id="caution" runat="server">&#9757	Sorry site is under upgradation you may Experience Registration problems.. <br />Thank you for your patience</p>
+        <div id="login_link"><p class="auto-style2">&nbsp;<asp:Label ID="Label2" runat="server" Enabled="False" Text="You Register Successfully Please click to " Visible="False"></asp:Label><a href="Login.aspx"  id="lg" runat="server" visible="false">Login</a></div>
+        </p>
+        
     </form>
 
     <footer>
-        <p class="auto-style2">&#9757	Sorry site is under upgradation you may Experience Registration problems.. <br />Thank you for your patience </p>
     </footer>        
         </body>
     

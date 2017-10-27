@@ -46,7 +46,13 @@ public partial class Register : System.Web.UI.Page
             //string display = "Thankyou for your Registration Please login now";
             //ClientScript.RegisterStartupScript(this.GetType(), "yourMessage", "alert('" + display + "');", true);
             //ClientScript.RegisterClientScriptBlock(GetType(), "sas", "<script> alert('Login success');</script>", true);
-            ClientScript.RegisterStartupScript(this.GetType(), "popup", "<script language='text/javascript'>alert('Succesfully Registered');</script>",true);
+            //ClientScript.RegisterStartupScript(this.GetType(), "popup", "<script language='text/javascript'>alert('Succesfully Registered');</script>",true);
+            //Response.Write("Registered Successfully");
+
+            tb1.Visible = false;
+            caution.Visible = false;
+            Label2.Visible = true;
+            lg.Visible = true;
             
 
 

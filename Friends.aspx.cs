@@ -10,9 +10,10 @@ public partial class Friends : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         //Username.Text = Request.QueryString["uname"].ToString();
-        String ss1 = Session["username"].ToString();
+        //String ss1 = Session["username"].ToString();
         //namelabel.Text = ss1;
         //Tree1.SelectedValue = ss1;
+        namelabel.Text = Session["username"].ToString();
 
 
     }

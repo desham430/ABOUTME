@@ -29,16 +29,12 @@
 <asp:Content ID="Content3" runat="server" contentplaceholderid="ContentPlaceHolder1">
     <table class="auto-style3" style="text-decoration:none"  >
         <tr>
-            <td class="auto-style4"><center><a onclick=" videoplay()" id="vid" >Videos</a></center></td>
+            <td class="auto-style4"><center><a onclick=" videoplay()" id="vid">Videos</a></center></td>
             <td class="auto-style4"><center><a href="Login.aspx">Login</a></center></td>
             <td class="auto-style4"><center><a href="Portfolio.aspx" >HOME</a></center></td>
             <td class="auto-style4">
                 <center><asp:Label ID="namelabel" runat="server" Text="Label" Enabled="False"></asp:Label></center>
-                <%--<asp:treeview runat="server" ID="Tree1">
-                    <Nodes>
-                        <asp:TreeNode Text="New Node" Value="New Node"></asp:TreeNode>
-                    </Nodes>
-                </asp:treeview>--%>
+               
             </td>
         </tr>
     </table>
